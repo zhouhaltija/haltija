@@ -1,0 +1,14 @@
+{
+  "name": "AllFields Context",
+  "story_string": "SYS={{system}}|WI={{wiBefore}}|DESC={{description}}|T={{trim}}",
+  "example_separator": "<<EX>>",
+  "chat_start": "<<START>>",
+  "use_stop_strings": false,
+  "names_as_stop_strings": false,
+  "story_string_position": 1,
+  "story_string_depth": 7,
+  "story_string_role": 2,
+  "always_force_name2": true,
+  "trim_sentences": true,
+  "single_line": true
+}

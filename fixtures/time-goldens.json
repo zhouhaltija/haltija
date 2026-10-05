@@ -1,0 +1,230 @@
+{
+  "_comment": "由 tools/gen-time-goldens.mjs 生成；两个函数在生成时从 SillyTavern 源码逐字抽取并运行",
+  "extractedFrom": "public/scripts/RossAscends-mods.js:169-195",
+  "cases": [
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1791189045123,
+      "iso": "2026-10-05T08:30:45.123Z",
+      "humanized": "2026-10-05@08h30m45s123ms",
+      "messageTimestamp": "2026-10-05T08:30:45.123Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1791189045000,
+      "iso": "2026-10-05T08:30:45.000Z",
+      "humanized": "2026-10-05@08h30m45s000ms",
+      "messageTimestamp": "2026-10-05T08:30:45.000Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1791189045007,
+      "iso": "2026-10-05T08:30:45.007Z",
+      "humanized": "2026-10-05@08h30m45s007ms",
+      "messageTimestamp": "2026-10-05T08:30:45.007Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1767225600000,
+      "iso": "2026-01-01T00:00:00.000Z",
+      "humanized": "2026-01-01@00h00m00s000ms",
+      "messageTimestamp": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1709208000001,
+      "iso": "2024-02-29T12:00:00.001Z",
+      "humanized": "2024-02-29@12h00m00s001ms",
+      "messageTimestamp": "2024-02-29T12:00:00.001Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1772953200999,
+      "iso": "2026-03-08T07:00:00.999Z",
+      "humanized": "2026-03-08@07h00m00s999ms",
+      "messageTimestamp": "2026-03-08T07:00:00.999Z"
+    },
+    {
+      "timezone": "UTC",
+      "effectiveTimezone": "UTC",
+      "epochMillis": 1793512800500,
+      "iso": "2026-11-01T06:00:00.500Z",
+      "humanized": "2026-11-01@06h00m00s500ms",
+      "messageTimestamp": "2026-11-01T06:00:00.500Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1791189045123,
+      "iso": "2026-10-05T08:30:45.123Z",
+      "humanized": "2026-10-05@16h30m45s123ms",
+      "messageTimestamp": "2026-10-05T08:30:45.123Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1791189045000,
+      "iso": "2026-10-05T08:30:45.000Z",
+      "humanized": "2026-10-05@16h30m45s000ms",
+      "messageTimestamp": "2026-10-05T08:30:45.000Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1791189045007,
+      "iso": "2026-10-05T08:30:45.007Z",
+      "humanized": "2026-10-05@16h30m45s007ms",
+      "messageTimestamp": "2026-10-05T08:30:45.007Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1767225600000,
+      "iso": "2026-01-01T00:00:00.000Z",
+      "humanized": "2026-01-01@08h00m00s000ms",
+      "messageTimestamp": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1709208000001,
+      "iso": "2024-02-29T12:00:00.001Z",
+      "humanized": "2024-02-29@20h00m00s001ms",
+      "messageTimestamp": "2024-02-29T12:00:00.001Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1772953200999,
+      "iso": "2026-03-08T07:00:00.999Z",
+      "humanized": "2026-03-08@15h00m00s999ms",
+      "messageTimestamp": "2026-03-08T07:00:00.999Z"
+    },
+    {
+      "timezone": "Asia/Shanghai",
+      "effectiveTimezone": "Asia/Shanghai",
+      "epochMillis": 1793512800500,
+      "iso": "2026-11-01T06:00:00.500Z",
+      "humanized": "2026-11-01@14h00m00s500ms",
+      "messageTimestamp": "2026-11-01T06:00:00.500Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1791189045123,
+      "iso": "2026-10-05T08:30:45.123Z",
+      "humanized": "2026-10-05@04h30m45s123ms",
+      "messageTimestamp": "2026-10-05T08:30:45.123Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1791189045000,
+      "iso": "2026-10-05T08:30:45.000Z",
+      "humanized": "2026-10-05@04h30m45s000ms",
+      "messageTimestamp": "2026-10-05T08:30:45.000Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1791189045007,
+      "iso": "2026-10-05T08:30:45.007Z",
+      "humanized": "2026-10-05@04h30m45s007ms",
+      "messageTimestamp": "2026-10-05T08:30:45.007Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1767225600000,
+      "iso": "2026-01-01T00:00:00.000Z",
+      "humanized": "2025-12-31@19h00m00s000ms",
+      "messageTimestamp": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1709208000001,
+      "iso": "2024-02-29T12:00:00.001Z",
+      "humanized": "2024-02-29@07h00m00s001ms",
+      "messageTimestamp": "2024-02-29T12:00:00.001Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1772953200999,
+      "iso": "2026-03-08T07:00:00.999Z",
+      "humanized": "2026-03-08@03h00m00s999ms",
+      "messageTimestamp": "2026-03-08T07:00:00.999Z"
+    },
+    {
+      "timezone": "America/New_York",
+      "effectiveTimezone": "America/New_York",
+      "epochMillis": 1793512800500,
+      "iso": "2026-11-01T06:00:00.500Z",
+      "humanized": "2026-11-01@01h00m00s500ms",
+      "messageTimestamp": "2026-11-01T06:00:00.500Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1791189045123,
+      "iso": "2026-10-05T08:30:45.123Z",
+      "humanized": "2026-10-05@09h30m45s123ms",
+      "messageTimestamp": "2026-10-05T08:30:45.123Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1791189045000,
+      "iso": "2026-10-05T08:30:45.000Z",
+      "humanized": "2026-10-05@09h30m45s000ms",
+      "messageTimestamp": "2026-10-05T08:30:45.000Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1791189045007,
+      "iso": "2026-10-05T08:30:45.007Z",
+      "humanized": "2026-10-05@09h30m45s007ms",
+      "messageTimestamp": "2026-10-05T08:30:45.007Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1767225600000,
+      "iso": "2026-01-01T00:00:00.000Z",
+      "humanized": "2026-01-01@00h00m00s000ms",
+      "messageTimestamp": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1709208000001,
+      "iso": "2024-02-29T12:00:00.001Z",
+      "humanized": "2024-02-29@12h00m00s001ms",
+      "messageTimestamp": "2024-02-29T12:00:00.001Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1772953200999,
+      "iso": "2026-03-08T07:00:00.999Z",
+      "humanized": "2026-03-08@07h00m00s999ms",
+      "messageTimestamp": "2026-03-08T07:00:00.999Z"
+    },
+    {
+      "timezone": "Europe/London",
+      "effectiveTimezone": "Europe/London",
+      "epochMillis": 1793512800500,
+      "iso": "2026-11-01T06:00:00.500Z",
+      "humanized": "2026-11-01@06h00m00s500ms",
+      "messageTimestamp": "2026-11-01T06:00:00.500Z"
+    }
+  ]
+}

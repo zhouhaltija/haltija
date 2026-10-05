@@ -1,0 +1,386 @@
+{
+  "_comment": "由 tools/gen-macro-goldens.mjs 生成；引擎源码在生成时从 SillyTavern 逐字抽取，仅重写了 import 路径",
+  "extractedFrom": "SillyTavern/public/scripts/macros/engine/",
+  "registeredTestMacros": {
+    "up": "无名参数 → 转大写",
+    "echo": "无名参数 → 原样返回",
+    "twice": "无名参数 → 重复两次",
+    "pad": "可选整数参数（默认 1）→ 若干个点",
+    "opt": "两个可选参数（b 默认 \"D\"）→ \"[a|b]\"",
+    "noop": "返回空串",
+    "bang": "参数包在感叹号里"
+  },
+  "envSummary": "names.char/user/group, character.*, system.maxPrompt",
+  "cases": [
+    {
+      "input": "",
+      "output": "",
+      "error": null
+    },
+    {
+      "input": "plain text",
+      "output": "plain text",
+      "error": null
+    },
+    {
+      "input": "a {b} c",
+      "output": "a {b} c",
+      "error": null
+    },
+    {
+      "input": "{{char}}",
+      "output": "Seraphina",
+      "error": null
+    },
+    {
+      "input": "{{user}}",
+      "output": "Traveler",
+      "error": null
+    },
+    {
+      "input": "x{{char}}y",
+      "output": "xSeraphinay",
+      "error": null
+    },
+    {
+      "input": "{{char}}/{{user}}",
+      "output": "Seraphina/Traveler",
+      "error": null
+    },
+    {
+      "input": "{{unknownMacro}}",
+      "output": "{{unknownMacro}}",
+      "error": null
+    },
+    {
+      "input": "a{{unknownMacro}}b",
+      "output": "a{{unknownMacro}}b",
+      "error": null
+    },
+    {
+      "input": "{{up:abc}}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "{{up::abc}}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "A {{up:: abc }} B",
+      "output": "A ABC B",
+      "error": null
+    },
+    {
+      "input": "{{up:{{char}}}}",
+      "output": "SERAPHINA",
+      "error": null
+    },
+    {
+      "input": "{{twice:{{char}}}}",
+      "output": "SeraphinaSeraphina",
+      "error": null
+    },
+    {
+      "input": "{{opt}}",
+      "output": "[null|null]",
+      "error": null
+    },
+    {
+      "input": "{{opt:a}}",
+      "output": "[a|null]",
+      "error": null
+    },
+    {
+      "input": "{{opt:a,b}}",
+      "output": "[a,b|null]",
+      "error": null
+    },
+    {
+      "input": "{{pad}}",
+      "output": "",
+      "error": null
+    },
+    {
+      "input": "{{pad:3}}",
+      "output": "...",
+      "error": null
+    },
+    {
+      "input": "{{pad::3}}",
+      "output": "...",
+      "error": null
+    },
+    {
+      "input": "{{echo:}}",
+      "output": "",
+      "error": null
+    },
+    {
+      "input": "{{echo::}}",
+      "output": "",
+      "error": null
+    },
+    {
+      "input": "{{up:abc",
+      "output": "{{up:abc",
+      "error": null
+    },
+    {
+      "input": "{{",
+      "output": "{{",
+      "error": null
+    },
+    {
+      "input": "a{{b",
+      "output": "a{{b",
+      "error": null
+    },
+    {
+      "input": "{{}}",
+      "output": "{{}}",
+      "error": null
+    },
+    {
+      "input": "{{ }}",
+      "output": "{{ }}",
+      "error": null
+    },
+    {
+      "input": "{{up:a}}{{up:b}}",
+      "output": "AB",
+      "error": null
+    },
+    {
+      "input": "{{noop}}X{{noop}}",
+      "output": "X",
+      "error": null
+    },
+    {
+      "input": "\\{\\{char\\}\\}",
+      "output": "{{char}}",
+      "error": null
+    },
+    {
+      "input": "{{{{char}}}}",
+      "output": "{{Seraphina}}",
+      "error": null
+    },
+    {
+      "input": "{{echo:a-b_c}}",
+      "output": "a-b_c",
+      "error": null
+    },
+    {
+      "input": "{{echo:a b c}}",
+      "output": "a b c",
+      "error": null
+    },
+    {
+      "input": "{{description}}",
+      "output": "A scholar.",
+      "error": null
+    },
+    {
+      "input": "{{personality}}",
+      "output": "{{personality}}",
+      "error": null
+    },
+    {
+      "input": "{{up: abc }}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "{{up:: abc }}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "{{up:a b}}",
+      "output": "A B",
+      "error": null
+    },
+    {
+      "input": "{{up::a b}}",
+      "output": "A B",
+      "error": null
+    },
+    {
+      "input": "X{{up:ab}}Y",
+      "output": "XABY",
+      "error": null
+    },
+    {
+      "input": "X{{up::ab}}Y",
+      "output": "XABY",
+      "error": null
+    },
+    {
+      "input": "{{echo:  padded  }}",
+      "output": "padded",
+      "error": null
+    },
+    {
+      "input": "{{echo:::a}}",
+      "output": ":a",
+      "error": null
+    },
+    {
+      "input": "{{echo:a:b}}",
+      "output": "a:b",
+      "error": null
+    },
+    {
+      "input": "{{opt::a::b}}",
+      "output": "[a|b]",
+      "error": null
+    },
+    {
+      "input": "{{opt::a}}",
+      "output": "[a|null]",
+      "error": null
+    },
+    {
+      "input": "{{opt::a::b::c}}",
+      "output": "{{opt::a::b::c}}",
+      "error": null
+    },
+    {
+      "input": "{{echo::a::b}}",
+      "output": "{{echo::a::b}}",
+      "error": null
+    },
+    {
+      "input": "{{echo:a::b}}",
+      "output": "a::b",
+      "error": null
+    },
+    {
+      "input": "{{pad2}}",
+      "output": "{{pad2}}",
+      "error": null
+    },
+    {
+      "input": "{{pad2:5}}",
+      "output": ".....",
+      "error": null
+    },
+    {
+      "input": "{{echo abc}}",
+      "output": "abc",
+      "error": null
+    },
+    {
+      "input": "{{echo  a b  c  }}",
+      "output": "a b  c",
+      "error": null
+    },
+    {
+      "input": "{{up hello}}",
+      "output": "HELLO",
+      "error": null
+    },
+    {
+      "input": "{{UP:abc}}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "{{Up:abc}}",
+      "output": "ABC",
+      "error": null
+    },
+    {
+      "input": "{{ECHO:x}}",
+      "output": "x",
+      "error": null
+    },
+    {
+      "input": "{{pad:abc}}",
+      "output": "{{pad:abc}}",
+      "error": null
+    },
+    {
+      "input": "{{pad:-1}}",
+      "output": "{{pad:-1}}",
+      "error": null
+    },
+    {
+      "input": "{{pad:0}}",
+      "output": "",
+      "error": null
+    },
+    {
+      "input": "{{pad2:abc}}",
+      "output": "{{pad2:abc}}",
+      "error": null
+    },
+    {
+      "input": "{{pad2:2}}",
+      "output": "..",
+      "error": null
+    },
+    {
+      "input": "{{opt::a::}}",
+      "output": "[a|]",
+      "error": null
+    },
+    {
+      "input": "{{opt::}}",
+      "output": "[|null]",
+      "error": null
+    },
+    {
+      "input": "<USER>",
+      "output": "Traveler",
+      "error": null
+    },
+    {
+      "input": "<BOT>",
+      "output": "Seraphina",
+      "error": null
+    },
+    {
+      "input": "<CHAR>",
+      "output": "Seraphina",
+      "error": null
+    },
+    {
+      "input": "<GROUP>",
+      "output": "The Trio",
+      "error": null
+    },
+    {
+      "input": "<CHARIFNOTGROUP>",
+      "output": "The Trio",
+      "error": null
+    },
+    {
+      "input": "x<BOT>y",
+      "output": "xSeraphinay",
+      "error": null
+    },
+    {
+      "input": "<user>小写",
+      "output": "Traveler小写",
+      "error": null
+    },
+    {
+      "input": "{{time_UTC+2}}",
+      "output": "{{time::UTC+2}}",
+      "error": null
+    },
+    {
+      "input": "{{time_UTC-10}}",
+      "output": "{{time::UTC-10}}",
+      "error": null
+    },
+    {
+      "input": "{{opt:a:b}}",
+      "output": "[a:b|null]",
+      "error": null
+    }
+  ]
+}

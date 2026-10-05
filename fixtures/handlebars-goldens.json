@@ -1,0 +1,1758 @@
+{
+  "_comment": "由 tools/gen-handlebars-goldens.mjs 生成；使用 ST 的 node_modules 里的真实 Handlebars，并注册了 ST 的 trim / helperMissing helper",
+  "helperRegistration": "public/scripts/macros.js:18-25",
+  "cases": [
+    {
+      "template": "{{char}}",
+      "variant": "full",
+      "output": "Seraphina",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}",
+      "variant": "minimal",
+      "output": "Seraphina",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{char}}",
+      "variant": "nochar",
+      "output": "{{char}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{user}}",
+      "variant": "full",
+      "output": "Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{user}}",
+      "variant": "minimal",
+      "output": "Traveler",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{user}}",
+      "variant": "nochar",
+      "output": "Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "plain text",
+      "variant": "full",
+      "output": "plain text",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "plain text",
+      "variant": "minimal",
+      "output": "plain text",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "plain text",
+      "variant": "nochar",
+      "output": "plain text",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "",
+      "variant": "full",
+      "output": "",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "",
+      "variant": "minimal",
+      "output": "",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "",
+      "variant": "nochar",
+      "output": "",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}} and {{user}}",
+      "variant": "full",
+      "output": "Seraphina and Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}} and {{user}}",
+      "variant": "minimal",
+      "output": "Seraphina and Traveler",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{char}} and {{user}}",
+      "variant": "nochar",
+      "output": "{{char}} and Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if description}}{{description}}{{/if}}",
+      "variant": "full",
+      "output": "A wandering scholar.",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if description}}{{description}}{{/if}}",
+      "variant": "minimal",
+      "output": "",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if description}}{{description}}{{/if}}",
+      "variant": "nochar",
+      "output": "A wandering scholar.",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if system}}{{system}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}",
+      "variant": "full",
+      "output": "Stay in character.\nA wandering scholar.\nSeraphina's personality: Curious, patient.\nScenario: A rain-soaked library.\nThe user is a traveler.\n",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if system}}{{system}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}",
+      "variant": "minimal",
+      "output": "",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if system}}{{system}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{char}}'s personality: {{personality}}\n{{/if}}{{#if scenario}}Scenario: {{scenario}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}",
+      "variant": "nochar",
+      "output": "Stay in character.\nA wandering scholar.\n{{char}}'s personality: Curious, patient.\nScenario: A rain-soaked library.\nThe user is a traveler.\n",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if anchorBefore}}{{anchorBefore}}\n{{/if}}{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{personality}}\n{{/if}}{{#if scenario}}{{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}{{#if anchorAfter}}{{anchorAfter}}\n{{/if}}{{trim}}",
+      "variant": "full",
+      "output": "ANCHOR-BEFORE\nStay in character.\nWI-BEFORE\nA wandering scholar.\nCurious, patient.\nA rain-soaked library.\nWI-AFTER\nThe user is a traveler.\nANCHOR-AFTER\n{{trim}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if anchorBefore}}{{anchorBefore}}\n{{/if}}{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{personality}}\n{{/if}}{{#if scenario}}{{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}{{#if anchorAfter}}{{anchorAfter}}\n{{/if}}{{trim}}",
+      "variant": "minimal",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if anchorBefore}}{{anchorBefore}}\n{{/if}}{{#if system}}{{system}}\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n{{/if}}{{#if description}}{{description}}\n{{/if}}{{#if personality}}{{personality}}\n{{/if}}{{#if scenario}}{{scenario}}\n{{/if}}{{#if wiAfter}}{{wiAfter}}\n{{/if}}{{#if persona}}{{persona}}\n{{/if}}{{#if anchorAfter}}{{anchorAfter}}\n{{/if}}{{trim}}",
+      "variant": "nochar",
+      "output": "ANCHOR-BEFORE\nStay in character.\nWI-BEFORE\nA wandering scholar.\nCurious, patient.\nA rain-soaked library.\nWI-AFTER\nThe user is a traveler.\nANCHOR-AFTER\n{{trim}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{trim}}",
+      "variant": "full",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{trim}}",
+      "variant": "minimal",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{trim}}",
+      "variant": "nochar",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "x{{trim}}y",
+      "variant": "full",
+      "output": "x{{trim}}y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "x{{trim}}y",
+      "variant": "minimal",
+      "output": "x{{trim}}y",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "x{{trim}}y",
+      "variant": "nochar",
+      "output": "x{{trim}}y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{unknownMacro}}",
+      "variant": "full",
+      "output": "{{unknownMacro}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{unknownMacro}}",
+      "variant": "minimal",
+      "output": "{{unknownMacro}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{unknownMacro}}",
+      "variant": "nochar",
+      "output": "{{unknownMacro}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "a{{unknownMacro}}b",
+      "variant": "full",
+      "output": "a{{unknownMacro}}b",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "a{{unknownMacro}}b",
+      "variant": "minimal",
+      "output": "a{{unknownMacro}}b",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "a{{unknownMacro}}b",
+      "variant": "nochar",
+      "output": "a{{unknownMacro}}b",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}{{unknownMacro}}{{persona}}",
+      "variant": "full",
+      "output": "Seraphina{{unknownMacro}}The user is a traveler.",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}{{unknownMacro}}{{persona}}",
+      "variant": "minimal",
+      "output": "Seraphina{{unknownMacro}}{{persona}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{char}}{{unknownMacro}}{{persona}}",
+      "variant": "nochar",
+      "output": "{{char}}{{unknownMacro}}The user is a traveler.",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if missing}}A{{else}}B{{/if}}",
+      "variant": "full",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if missing}}A{{else}}B{{/if}}",
+      "variant": "minimal",
+      "output": "B",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if missing}}A{{else}}B{{/if}}",
+      "variant": "nochar",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}A{{else}}B{{/if}}",
+      "variant": "full",
+      "output": "A",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}A{{else}}B{{/if}}",
+      "variant": "minimal",
+      "output": "A",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if char}}A{{else}}B{{/if}}",
+      "variant": "nochar",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if emptyValue}}A{{else}}B{{/if}}",
+      "variant": "emptyValue-empty",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi",
+        "emptyValue": ""
+      }
+    },
+    {
+      "template": "{{#if emptyValue}}A{{else}}B{{/if}}",
+      "variant": "emptyValue-undefined",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#unless missing}}A{{/unless}}",
+      "variant": "full",
+      "output": "A",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#unless missing}}A{{/unless}}",
+      "variant": "minimal",
+      "output": "A",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#unless missing}}A{{/unless}}",
+      "variant": "nochar",
+      "output": "A",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#unless char}}A{{else}}B{{/unless}}",
+      "variant": "full",
+      "output": "B",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#unless char}}A{{else}}B{{/unless}}",
+      "variant": "minimal",
+      "output": "B",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#unless char}}A{{else}}B{{/unless}}",
+      "variant": "nochar",
+      "output": "A",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}{{#if user}}both{{/if}}{{/if}}",
+      "variant": "full",
+      "output": "both",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}{{#if user}}both{{/if}}{{/if}}",
+      "variant": "minimal",
+      "output": "both",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if char}}{{#if user}}both{{/if}}{{/if}}",
+      "variant": "nochar",
+      "output": "",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}outer-{{#if description}}inner{{/if}}{{/if}}",
+      "variant": "full",
+      "output": "outer-inner",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}outer-{{#if description}}inner{{/if}}{{/if}}",
+      "variant": "minimal",
+      "output": "outer-",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if char}}outer-{{#if description}}inner{{/if}}{{/if}}",
+      "variant": "nochar",
+      "output": "",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{{char}}}",
+      "variant": "full",
+      "output": "Seraphina",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{{char}}}",
+      "variant": "minimal",
+      "output": "Seraphina",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{{char}}}",
+      "variant": "nochar",
+      "output": "{{char}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{{char}}} vs {{char}}",
+      "variant": "full",
+      "output": "Seraphina vs Seraphina",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{{char}}} vs {{char}}",
+      "variant": "minimal",
+      "output": "Seraphina vs Seraphina",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{{char}}} vs {{char}}",
+      "variant": "nochar",
+      "output": "{{char}} vs {{char}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}{{trim}}{{/if}}",
+      "variant": "full",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if char}}{{trim}}{{/if}}",
+      "variant": "minimal",
+      "output": "{{trim}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if char}}{{trim}}{{/if}}",
+      "variant": "nochar",
+      "output": "",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}{{user}}",
+      "variant": "full",
+      "output": "SeraphinaTraveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}{{user}}",
+      "variant": "minimal",
+      "output": "SeraphinaTraveler",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{char}}{{user}}",
+      "variant": "nochar",
+      "output": "{{char}}Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}-{{user}}",
+      "variant": "full",
+      "output": "Seraphina-Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{char}}-{{user}}",
+      "variant": "minimal",
+      "output": "Seraphina-Traveler",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{char}}-{{user}}",
+      "variant": "nochar",
+      "output": "{{char}}-Traveler",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if true}}Y{{else}}N{{/if}}",
+      "variant": "full",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if true}}Y{{else}}N{{/if}}",
+      "variant": "minimal",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if true}}Y{{else}}N{{/if}}",
+      "variant": "nochar",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if false}}Y{{else}}N{{/if}}",
+      "variant": "full",
+      "output": "N",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if false}}Y{{else}}N{{/if}}",
+      "variant": "minimal",
+      "output": "N",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if false}}Y{{else}}N{{/if}}",
+      "variant": "nochar",
+      "output": "N",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if 1}}Y{{else}}N{{/if}}",
+      "variant": "full",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if 1}}Y{{else}}N{{/if}}",
+      "variant": "minimal",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if 1}}Y{{else}}N{{/if}}",
+      "variant": "nochar",
+      "output": "Y",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if 0}}Y{{else}}N{{/if}}",
+      "variant": "full",
+      "output": "N",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{#if 0}}Y{{else}}N{{/if}}",
+      "variant": "minimal",
+      "output": "N",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{#if 0}}Y{{else}}N{{/if}}",
+      "variant": "nochar",
+      "output": "N",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{true}}",
+      "variant": "full",
+      "output": "{{true}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{true}}",
+      "variant": "minimal",
+      "output": "{{true}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{true}}",
+      "variant": "nochar",
+      "output": "{{true}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{false}}",
+      "variant": "full",
+      "output": "{{false}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{false}}",
+      "variant": "minimal",
+      "output": "{{false}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{false}}",
+      "variant": "nochar",
+      "output": "{{false}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{123}}",
+      "variant": "full",
+      "output": "{{123}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "char": "Seraphina",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    },
+    {
+      "template": "{{123}}",
+      "variant": "minimal",
+      "output": "{{123}}",
+      "error": null,
+      "params": {
+        "char": "Seraphina",
+        "user": "Traveler"
+      }
+    },
+    {
+      "template": "{{123}}",
+      "variant": "nochar",
+      "output": "{{123}}",
+      "error": null,
+      "params": {
+        "description": "A wandering scholar.",
+        "personality": "Curious, patient.",
+        "persona": "The user is a traveler.",
+        "scenario": "A rain-soaked library.",
+        "system": "Stay in character.",
+        "user": "Traveler",
+        "wiBefore": "WI-BEFORE",
+        "wiAfter": "WI-AFTER",
+        "loreBefore": "WI-BEFORE",
+        "loreAfter": "WI-AFTER",
+        "anchorBefore": "ANCHOR-BEFORE",
+        "anchorAfter": "ANCHOR-AFTER",
+        "mesExamples": "<START>\n{{user}}: hi",
+        "mesExamplesRaw": "<START>\n{{user}}: hi"
+      }
+    }
+  ]
+}

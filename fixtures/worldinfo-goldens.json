@@ -1,0 +1,764 @@
+{
+  "_comment": "由 tools/gen-worldinfo-goldens.mjs 生成；函数源码在生成时从 SillyTavern 逐字抽取，请勿手改",
+  "generatedFrom": "SillyTavern/public/scripts/world-info.js",
+  "probes": [
+    "abc",
+    "ABC",
+    "xabcx",
+    "whisper",
+    "whispers",
+    "a/b",
+    "中文",
+    "aaa",
+    "start here",
+    "the end",
+    "x1y2",
+    "a\nb",
+    "",
+    "  ",
+    "word",
+    "a word here",
+    "p{L}",
+    "café",
+    "é"
+  ],
+  "getStringHash": [
+    {
+      "input": "",
+      "hash": 3338908027751811
+    },
+    {
+      "input": "a",
+      "hash": 7929297801672961
+    },
+    {
+      "input": "abc",
+      "hash": 5059922895146125
+    },
+    {
+      "input": "中文",
+      "hash": 2187728443839274
+    },
+    {
+      "input": "hello world",
+      "hash": 3259054761512980
+    },
+    {
+      "input": "{\"uid\":0,\"key\":[\"dragon\"],\"content\":\"x\"}",
+      "hash": 5725213132776808
+    },
+    {
+      "input": "{\"uid\":3,\"disable\":true,\"content\":\"This entry is disabled.\"}",
+      "hash": 8090518079541117
+    },
+    {
+      "input": "\u0001\n\u0001abc",
+      "hash": 392719301974015
+    },
+    {
+      "input": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "hash": 2739962799859243
+    },
+    {
+      "input": "{\"world\":\"fixture-book\",\"uid\":2,\"comment\":\"Regex key + at depth\",\"sticky\":3}",
+      "hash": 2398011046393581
+    },
+    {
+      "input": "😀🎉",
+      "hash": 7004706583355114
+    },
+    {
+      "input": "\u0000\u0001\u001f",
+      "hash": 5044832188889412
+    }
+  ],
+  "parseRegexFromString": [
+    {
+      "input": "/abc/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/abc/i",
+      "valid": true,
+      "flagSet": [
+        "i"
+      ],
+      "matched": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/abc/gimsuy",
+      "valid": true,
+      "flagSet": [
+        "g",
+        "i",
+        "m",
+        "s",
+        "u",
+        "y"
+      ],
+      "matched": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/abc/ig",
+      "valid": true,
+      "flagSet": [
+        "g",
+        "i"
+      ],
+      "matched": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/whisper(s)?/i",
+      "valid": true,
+      "flagSet": [
+        "i"
+      ],
+      "matched": [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/a\\/b/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/\\d+/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/^start/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/end$/m",
+      "valid": true,
+      "flagSet": [
+        "m"
+      ],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/a.c/s",
+      "valid": true,
+      "flagSet": [
+        "s"
+      ],
+      "matched": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/[a-z]+/gi",
+      "valid": true,
+      "flagSet": [
+        "g",
+        "i"
+      ],
+      "matched": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "input": "/abc/u",
+      "valid": true,
+      "flagSet": [
+        "u"
+      ],
+      "matched": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/abc/y",
+      "valid": true,
+      "flagSet": [
+        "y"
+      ],
+      "matched": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "abc",
+      "valid": false
+    },
+    {
+      "input": "/abc",
+      "valid": false
+    },
+    {
+      "input": "abc/",
+      "valid": false
+    },
+    {
+      "input": "",
+      "valid": false
+    },
+    {
+      "input": "/",
+      "valid": false
+    },
+    {
+      "input": "/a/b/",
+      "valid": false
+    },
+    {
+      "input": "/a/b/i",
+      "valid": false
+    },
+    {
+      "input": "/abc/x",
+      "valid": false
+    },
+    {
+      "input": "/abc/ii",
+      "valid": false
+    },
+    {
+      "input": "/abc/1",
+      "valid": false
+    },
+    {
+      "input": "/[/",
+      "valid": false
+    },
+    {
+      "input": "/(/",
+      "valid": false
+    },
+    {
+      "input": "/a{2,1}/",
+      "valid": false
+    },
+    {
+      "input": "//",
+      "valid": false
+    },
+    {
+      "input": "//i",
+      "valid": false
+    },
+    {
+      "input": "/中文/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/\\/\\//",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/(?<name>\\w+)/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "input": "/(?<=a)b/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/\\p{L}+/u",
+      "valid": true,
+      "flagSet": [
+        "u"
+      ],
+      "matched": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "input": "/\\p{L}+/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/\\w+/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    },
+    {
+      "input": "/\\s/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/^$/m",
+      "valid": true,
+      "flagSet": [
+        "m"
+      ],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "input": "/\\bword\\b/",
+      "valid": true,
+      "flagSet": [],
+      "matched": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{"user_name":"User","character_name":"Seraphina","create_date":"2026-10-05T08:00:00.000Z","chat_metadata":{}}
+{"extra":{},"is_system":false,"send_date":"2026-10-05T08:00:05.000Z","name":"Seraphina","is_user":false,"mes":"Welcome back."}
+{"extra":{},"is_system":true,"send_date":"2026-10-05T08:00:10.000Z","name":"","is_user":false,"mes":"[A hidden system note]"}
+{"extra":{},"is_system":false,"send_date":"2026-10-05T08:00:20.000Z","name":"User","is_user":true,"mes":"Let us continue.","force_avatar":"/img/user-default.png"}

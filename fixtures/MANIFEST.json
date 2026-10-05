@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-10-05T08:14:30.419Z",
+  "files": [
+    {
+      "path": "MANIFEST.json",
+      "bytes": 2331
+    },
+    {
+      "path": "README.md",
+      "bytes": 4456
+    },
+    {
+      "path": "characters/charx-test.charx",
+      "bytes": 520971
+    },
+    {
+      "path": "characters/legacy-v1.json",
+      "bytes": 272
+    },
+    {
+      "path": "characters/precedence-test.png",
+      "bytes": 546501
+    },
+    {
+      "path": "characters/seraphina-v2.png",
+      "bytes": 526316
+    },
+    {
+      "path": "characters/seraphina-v3.png",
+      "bytes": 551901
+    },
+    {
+      "path": "chats/default_Seraphina/fixture-basic.jsonl",
+      "bytes": 1009
+    },
+    {
+      "path": "chats/default_Seraphina/fixture-imported.jsonl",
+      "bytes": 525
+    },
+    {
+      "path": "chats/default_Seraphina/fixture-integrity.jsonl",
+      "bytes": 447
+    },
+    {
+      "path": "expected/charx-test.json",
+      "bytes": 17701
+    },
+    {
+      "path": "expected/legacy-v1.json",
+      "bytes": 272
+    },
+    {
+      "path": "expected/precedence-ccv3-wins.json",
+      "bytes": 17550
+    },
+    {
+      "path": "expected/seraphina-v2.json",
+      "bytes": 13428
+    },
+    {
+      "path": "expected/seraphina-v3.json",
+      "bytes": 17543
+    },
+    {
+      "path": "handlebars-goldens.json",
+      "bytes": 44619
+    },
+    {
+      "path": "macro-goldens.json",
+      "bytes": 7323
+    },
+    {
+      "path": "presets/context/Adventure.json",
+      "bytes": 704
+    },
+    {
+      "path": "presets/context/AllFields.json",
+      "bytes": 405
+    },
+    {
+      "path": "presets/context/Alpaca-Single-Turn.json",
+      "bytes": 714
+    },
+    {
+      "path": "presets/instruct/Adventure.json",
+      "bytes": 659
+    },
+    {
+      "path": "presets/instruct/AllFields.json",
+      "bytes": 744
+    },
+    {
+      "path": "presets/instruct/Alpaca-Single-Turn.json",
+      "bytes": 826
+    },
+    {
+      "path": "presets/reasoning/AllFields.json",
+      "bytes": 102
+    },
+    {
+      "path": "presets/reasoning/Blank.json",
+      "bytes": 81
+    },
+    {
+      "path": "presets/reasoning/DeepSeek.json",
+      "bytes": 107
+    },
+    {
+      "path": "presets/sysprompt/Actor.json",
+      "bytes": 370
+    },
+    {
+      "path": "presets/sysprompt/AllFields.json",
+      "bytes": 97
+    },
+    {
+      "path": "presets/sysprompt/Assistant - Expert.json",
+      "bytes": 779
+    },
+    {
+      "path": "prompt-order/default.json",
+      "bytes": 1024
+    },
+    {
+      "path": "worldinfo-goldens.json",
+      "bytes": 12141
+    },
+    {
+      "path": "worlds/fixture-book.json",
+      "bytes": 4757
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_comment": "由 tools/gen-fixtures.mjs 从 SillyTavern/public/scripts/PromptManager.js 抽取",
+  "source": "promptManagerDefaultPromptOrder",
+  "entries": [
+    {
+      "identifier": "main",
+      "enabled": true
+    },
+    {
+      "identifier": "worldInfoBefore",
+      "enabled": true
+    },
+    {
+      "identifier": "personaDescription",
+      "enabled": true
+    },
+    {
+      "identifier": "charDescription",
+      "enabled": true
+    },
+    {
+      "identifier": "charPersonality",
+      "enabled": true
+    },
+    {
+      "identifier": "scenario",
+      "enabled": true
+    },
+    {
+      "identifier": "enhanceDefinitions",
+      "enabled": false
+    },
+    {
+      "identifier": "nsfw",
+      "enabled": true
+    },
+    {
+      "identifier": "worldInfoAfter",
+      "enabled": true
+    },
+    {
+      "identifier": "dialogueExamples",
+      "enabled": true
+    },
+    {
+      "identifier": "chatHistory",
+      "enabled": true
+    },
+    {
+      "identifier": "jailbreak",
+      "enabled": true
+    }
+  ]
+}
