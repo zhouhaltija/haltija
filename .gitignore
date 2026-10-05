@@ -1,0 +1,32 @@
+# --- 构建产物 ---
+build/
+out/
+.gradle/
+.gradle-cache/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# --- IDE ---
+.idea/
+*.iml
+*.hprof
+
+# --- 本地工具链（JDK / Gradle 发行版，不入库）---
+.toolchain/
+
+# --- fixture 生成过程中的临时目录 ---
+.fixture-scratch/
+
+# --- 上游 SillyTavern 检出（建议改为 git submodule）---
+/SillyTavern/
+
+# --- macOS ---
+.DS_Store
+
+# --- 日志 ---
+*.log
+
+# 构建产物（用于分发的 APK）
+dist/

@@ -1,0 +1,24 @@
+sillyapp — NOTICE
+=================
+
+本项目（sillyapp）以 GNU Affero General Public License v3.0 发布，全文见 LICENSE。
+
+上游依赖与参考
+--------------
+
+SillyTavern
+  https://github.com/SillyTavern/SillyTavern
+  Copyright (C) SillyTavern contributors
+  Licensed under GNU Affero General Public License v3.0
+
+  本项目的数据格式实现（角色卡 PNG tEXt chunk 的 chara / ccv3 约定、
+  chats/*.jsonl 的消息 schema、worlds/*.json 的条目字段与枚举取值、
+  预设文件布局）以 SillyTavern 为规范来源。测试基准 fixtures/ 中的
+  样本文件由 SillyTavern 自身的模块与 HTTP API 生成。
+
+  选择 AGPL-3.0 作为本项目的许可，与上游保持一致。
+
+字体、图标与其他资源
+--------------------
+
+（待补充：若引入第三方字体、图标或模型资源，在此登记其名称、作者与许可。）
