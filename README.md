@@ -1,9 +1,11 @@
 haltija
 =======
 
-> **待更名**：产品名已定为 **haltija**，当前代码里仍是 `app.silly` / `SillyApp`。
-> 机械改名步骤见 [`docs/handover.md`](docs/handover.md#81-优先更名为-haltija)；
+> 产品名与 Android 包名已统一为 **haltija** / `app.haltija`。
 > 目标仓库 `git@github.com:zhouhaltija/haltija.git`。
+
+当前版本 **0.2.0**：角色网格与搜索、会话新建/切换、聊天保存与恢复。
+安装包：`dist/haltija-0.2.0.apk`（签名 release）。旧 `app.silly` 与新版是不同应用，需重新配置连接并授权共享目录。
 
 SillyTavern 的 Android 原生客户端。**纯 Kotlin 内核**，不使用 WebView，不内嵌 Node。
 
@@ -163,13 +165,17 @@ node tools/verify-fixtures.mjs   # 退出码非 0 表示基准本身有问题
 | `core-provider` 请求构造 | ✅ | 20 项；覆盖三家在 system 位置 / 角色名 / 鉴权头 / 消息合并上的差异 |
 | `core-provider` 传输契约与编排 | ✅ | 12 项；用假客户端跑完整流式流程，含分片、错误、非流式 |
 | `app` OkHttp 传输实现 | ✅ | 读超时而非总超时；错误正文原样带出；UTF-8 增量解码 |
-| `app` 聊天界面 | ✅ | 可真的收发：设置 → 组装 → 流式渲染，支持停止生成 |
+| `app` 聊天界面 | ✅ | 可真的收发：设置 → 组装 → 流式渲染；停止或断流保留已收内容 |
 | `app` 管线自检屏 | ✅ | 把内核每一步的产物摊开显示 |
 | `core-data` 存储层 | ✅ | 20 项；仓库布局对齐 ST（聊天目录用头像名，不是显示名）|
 | `app` 目录实现 | ✅ | `java.io.File` 与 SAF 两种；SAF 可直指桌面 ST 的 `data/default-user/` |
-| `app` 打包 | ✅ | 签名 release APK 13.5 MB / debug 20.5 MB，产物在 `dist/` |
+| `app` 角色列表 | ✅ | PNG 头像网格、名字搜索与角色切换 |
+| `app` 会话管理 | ✅ | 新建/切换、按目录和角色记住最近会话、重启恢复 |
+| `app` 聊天持久化 | ✅ | 原始 JSON 追加写回，保留 integrity/未知字段；保存失败可重试 |
+| `app` 生成收尾与传输 | ✅ | 17 项新增单测；完整回复/取消/断流落盘、阻塞读可取消 |
+| `app` 打包 | ✅ | 0.2.0 debug / 签名 release APK，产物在 `dist/` |
 
-**合计 359 项测试全绿**，另加 fixtures 的 16 项交叉校验。
+**合计 376 项测试全绿**，另加 fixtures 的 16 项交叉校验。
 
 ### 交接文档
 
@@ -196,7 +202,8 @@ node tools/verify-fixtures.mjs   # 退出码非 0 表示基准本身有问题
    都包裹一个 `JsonObject`，只叠加类型化读取入口，不重新编码。
    原因：这些格式里有大量第三方字段（`extensions`、`extra`、未来版本新增的键），
    强类型模型解码再编码会静默丢数据 —— 那等于损坏用户的卡和聊天记录。
-2. **写回原子化。** 先写 `.tmp` 再 `ATOMIC_MOVE`，避免写到一半被杀导致聊天截断。
+2. **写回保护。** 私有目录先写临时文件并同步，再 `ATOMIC_MOVE`；SAF 覆盖前完成备份，
+   中断时可从备份恢复。DocumentsProvider 的实际行为需真机验证。
 3. **`chat_metadata` 必须原样保留。** 里面的 `integrity` 是 ST 的完整性校验串，
    丢了或改了，ST 会拒绝覆盖该聊天文件。
 

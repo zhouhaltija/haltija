@@ -1,7 +1,7 @@
 # 交接文档
 
 > 最后更新：2026-10-05
-> 当前版本：`0.1.0`（应用名 `SillyApp`，**待更名为 `haltija`**——见[第 8 节](#8-待办与更名计划)）
+> 当前版本：`0.2.0`（应用名 `haltija`，包名 `app.haltija`）
 
 ---
 
@@ -24,24 +24,24 @@ License 是 **AGPL-3.0**（与上游一致），见 [`LICENSE`](../LICENSE) 与 
 
 ## 2. 当前进度
 
-**359 项测试全绿**（`core-data` 95、`core-prompt` 191、`core-provider` 61、`app` 12 —— 数字会随提交变化，以 `./gradlew test` 为准）。
-主干 8160 行 / 测试 5480 行。
+**376 项测试全绿**（`core-data` 95、`core-prompt` 191、`core-provider` 61、`app` 29 —— 数字会随提交变化，以 `./gradlew test` 为准）。
+新增 17 项测试覆盖会话持久化、生成收尾与可取消 HTTP 传输。
 
 | 模块 | 状态 | 说明 |
 |---|---|---|
 | `core-data` | ✅ | 角色卡（PNG `tEXt:chara`/`ccv3`、CharX、旧版 JSON v1）、`chats/*.jsonl`、`worlds/*.json`、`presets/*`、目录仓库层、时间戳格式 |
 | `core-prompt` | ✅ | 世界书引擎、宏引擎（含全部内置宏）、Handlebars 渲染、`story_string` 管线、Prompt 组装 |
 | `core-provider` | ✅ | SSE 解析、OpenAI 兼容 / Anthropic / Gemini 的请求构造与流式解释、传输编排 |
-| `app` | 🟡 | 能聊天、能读 ST 数据目录；**缺角色列表页与聊天持久化** |
+| `app` | 🟡 | 角色网格与搜索、会话列表与新建/切换、聊天持久化与恢复；导入、预设 UI、消息编辑待做 |
 
-已产出的 APK：`dist/SillyApp-0.1.0.apk`（签名 release，13.5 MB，minSdk 26 / targetSdk 36）。
+已产出的 APK：`dist/haltija-0.2.0.apk`（签名 release，minSdk 26 / targetSdk 36）。
 
 ---
 
 ## 3. 目录结构
 
 ```
-sillyApp/
+haltija/
 ├── android/                      Gradle 工程
 │   ├── core-data/                纯 JVM：数据格式读写（不依赖 Android SDK）
 │   ├── core-prompt/              纯 JVM：世界书 / 宏 / Prompt 组装
@@ -220,49 +220,36 @@ node tools/gen-*-goldens.mjs         # 重新生成各类 goldens
 
 ---
 
-## 8. 待办与更名计划
+## 8. 已完成与后续待办
 
-### 8.1 【优先】更名为 haltija
+### 8.1 更名为 haltija（已完成）
 
-产品名定为 **haltija**（芬兰神话里守护某处所/家宅的精灵，与「世界书守护者」的意象贴合）。
-目标仓库：`git@github.com:zhouhaltija/haltija.git`
+产品名、Gradle 根工程名、Android namespace/applicationId、全部 Kotlin 包名与源码目录
+已统一为 **haltija** / `app.haltija`。发布包采用 `dist/haltija-*.apk`。
+目标仓库：`git@github.com:zhouhaltija/haltija.git`。
 
-需要改动的地方：
+从旧包 `app.silly` 改为 `app.haltija` 后，Android 视其为另一个应用，不能直接覆盖升级。
+测试者需重新配置 API Key；共享目录的数据仍可重新授权使用。
+本机签名密钥文件沿用原有名称，不重新生成密钥。
 
-| 项 | 从 | 到 |
-|---|---|---|
-| Gradle 根工程名 | `settings.gradle.kts` 里的 `rootProject.name` | `haltija` |
-| Android namespace | `app.silly` | `app.haltija` |
-| applicationId | `app.silly` | `app.haltija` |
-| Kotlin 包名 | `app.silly.*` | `app.haltija.*` |
-| 源码目录 | `app/src/main/kotlin/app/silly/` | `app/src/main/kotlin/app/haltija/` |
-| 应用显示名 | `res/values/strings.xml` 的 `app_name` = `SillyApp` | `haltija` |
-| 文档 | README / docs 里的 `SillyApp` | `haltija` |
-| APK 文件名 | `dist/SillyApp-*.apk` | `dist/haltija-*.apk` |
+### 8.2 角色与会话管理（已完成）
 
-**注意**：
-- 改 `applicationId` 会让新包**装不成升级**（系统视为另一个应用）。目前是 0.1.0、
-  还没人装过，是改名的好时机；改了之后要提醒测试者先卸载旧包。
-- 更名**不涉及**数据格式，`core-*` 模块里除包名外无实质改动。
-- 建议用一个提交专门做机械改名（`git mv` + `sed`），方便 review 与回滚。
+- 角色网格显示 PNG 头像，支持按名字搜索和切换；没有卡片时提供可持久化的演示角色。
+- 会话列表显示消息数与末条消息预览，支持新建和切换。
+- 按数据目录、角色分别记住最近会话，重启与切换角色后恢复。
+- 用户消息先落盘再发请求；完整回复、停止生成或网络断流时保存已有正文与思考。
+- 保存始终追加到原始 `Chat`，保留头部、`integrity`、旧消息的 swipes/extra 与未知字段；
+  老存档缺 integrity 时仅补该字段，新会话生成 uuidv4。
+- 存储与图片解码在后台执行；生成、加载或未保存时禁止切换角色/会话/目录。
+- 保存失败展示错误与“重试保存”，保留内存快照；损坏行的会话拒绝加载，避免丢行后覆盖。
+- 私有目录采用临时文件 + fsync + 原子替换；SAF 写入先保留完整备份，成功后删除，
+  中断时读取备份。SAF 的覆盖原子性由 DocumentsProvider 决定，需真机验证各 provider。
+- 取消生成会主动关闭 HTTP 连接，不再等最长五分钟的读超时。
 
-命令参考（动手前先 `git status` 确认工作区干净）：
-
-```bash
-cd android
-git mv app/src/main/kotlin/app/silly app/src/main/kotlin/app/haltija
-git mv app/src/test/kotlin/app/silly   app/src/test/kotlin/app/haltija
-# 再全局替换包名与显示名（core-* 模块内没有 app.silly，只有 app.silly.core.*）
-grep -rl 'app\.silly' --include='*.kt' --include='*.kts' --include='*.xml' . | xargs sed -i '' 's/app\.silly/app.haltija/g'
-```
-
-### 8.2 功能待办
+### 8.3 功能待办
 
 | 优先级 | 项 | 说明 |
 |---|---|---|
-| 高 | **角色列表页** | 目前只会用目录里按名字排序的第一个角色。网格 + 头像，点选切换 |
-| 高 | **聊天持久化** | 消息只在内存里，退出即丢。`chats/*.jsonl` 的读写实现与测试都已就绪，只差接进 ViewModel |
-| 高 | 新建/切换会话 | 文件名用 `ChatRepository.newChatFileName()`；**务必保留 `chat_metadata.integrity`** |
 | 中 | swipe / 编辑 / 删除消息 | ST 的核心交互；注意 `mes === swipes[swipe_id]` 不变量 |
 | 中 | 角色卡导入 | 从系统文件选择器导入 PNG / CharX |
 | 中 | 预设界面 | `presets/*` 的读取已实现，缺 UI |
@@ -270,7 +257,7 @@ grep -rl 'app\.silly' --include='*.kt' --include='*.kts' --include='*.xml' . | x
 | 低 | 角色卡加载缓存 | PNG 卡必须整份读入才能拿到名字与头像，100 个卡就是 50MB I/O |
 | 低 | 流式时的前台服务 | 长回答切到后台容易被杀；Manifest 里权限已声明 |
 
-### 8.3 已知的未实现 / 有意为之
+### 8.4 已知的未实现 / 有意为之
 
 - **不做 instruct 模板拍平**：ST 的 `formatInstructModeChat` 只对 text-completion 类后端有意义，
   本项目面向对话式接口（消息自带 role）。
@@ -283,10 +270,16 @@ grep -rl 'app\.silly' --include='*.kt' --include='*.kts' --include='*.xml' . | x
 
 ## 9. 接手后的第一步建议
 
-1. `cd android && ./gradlew test` —— 确认 359 项全绿，环境没问题
+1. `cd android && ./gradlew test` —— 确认 376 项全绿，环境没问题
 2. 读 [`docs/worldinfo-engine-spec.md`](worldinfo-engine-spec.md) 与
    [`docs/macro-engine-spec.md`](macro-engine-spec.md) —— 这两份是算法规格，比代码好读
-3. 装一下 `dist/SillyApp-0.1.0.apk` 感受现状（记得先填 API Key）
-4. 按 [8.1](#81-优先更名为-haltija) 做更名，再动功能
+3. 安装 `dist/haltija-0.2.0.apk`，验证角色/会话切换、退出恢复与 SAF 目录（记得先填 API Key）
+4. 按第 8 节的功能待办继续推进
 
 有疑问优先看 `tools/` 里的生成脚本 —— 它们说明了「期望值是从哪来的」。
+
+
+### 本轮验证边界
+
+376 项 JVM/Android 本地单测与 fixtures 的 16 项交叉校验通过；debug、签名 release 构建已产出。
+本轮未连接设备，Compose 交互、进程强杀恢复与 SAF DocumentsProvider 的真机行为尚待验证。

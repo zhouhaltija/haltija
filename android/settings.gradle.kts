@@ -1,4 +1,4 @@
-rootProject.name = "sillyapp"
+rootProject.name = "haltija"
 
 pluginManagement {
     repositories {

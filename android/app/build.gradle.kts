@@ -22,7 +22,7 @@ val keystoreProperties = Properties().apply {
 val hasReleaseSigning = keystoreProperties.getProperty("storeFile") != null
 
 android {
-    namespace = "app.silly"
+    namespace = "app.haltija"
 
     // 本机 SDK 里装的是 android-36.1 与 build-tools 36.1.0（次版本号），
     // AGP 默认会去找 android-36 / 36.0.0 并尝试下载 —— 显式指定已装的版本，
@@ -32,11 +32,11 @@ android {
     buildToolsVersion = "36.1.0"
 
     defaultConfig {
-        applicationId = "app.silly"
+        applicationId = "app.haltija"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 2
+        versionName = "0.2.0"
     }
 
     signingConfigs {

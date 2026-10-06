@@ -11,13 +11,13 @@
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SillyApp">
+        android:theme="@style/Theme.haltija">
 
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SillyApp">
+            android:theme="@style/Theme.haltija">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
